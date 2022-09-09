@@ -1,0 +1,25 @@
+p: selection {background: pink;}
+
+.a{background-color: red;
+	margin-left: 10%;
+	box-shadow: 20px 20px 2px darkslategrey;}/*es para hacer sombra*/
+
+.b {background-color: green;}
+
+.c{background-color: orange;}
+
+.a, .b, .c{width: 25%;
+		   height: auto;
+		   float: left;
+		   margin-right: 10px;
+		   margin-bottom: 10px;}
+
+@media(max-width: 618px)
+{.a, .b, .c{width: 80%
+			height:auto;
+			display: block;
+			float: none;
+			margin-left: 10%}}
+
+.b: nth-child(3){color: red;}
+.b: nth-last-child(3){background-color:#0C7475;}
